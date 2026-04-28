@@ -27,6 +27,8 @@ const cards = [
   },
 ];
 
+console.log(cards);
+
 
 
 // TASK 2: Render Cards Dynamically
