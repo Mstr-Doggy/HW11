@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnapStudy — How It Works</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0d14;
+      color: #f0eaf9;
+      min-height: 100vh;
+      padding: 60px 24px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #c9a0f0;
+      margin-bottom: 48px;
+      font-size: 1rem;
+    }
+
+    #card-container {
+      display: flex;
+      gap: 28px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .step-card {
+      background: #1a1228;
+      border: 2px solid transparent;
+      border-radius: 16px;
+      padding: 32px 24px;
+      width: 300px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .step-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .step-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+
+    .card-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 16px;
+    }
+
+    .step-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      color: #f0eaf9;
+    }
+
+    .step-card p {
+      font-size: 0.9rem;
+      color: #c3b8d8;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .stars {
+      color: #d295fd;
+      font-size: 1rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+
+    .card-link {
+      display: inline-block;
+      background: #d295fd;
+      color: #6a0dad;
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 8px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .card-link:hover {
+      background: #bf7aee;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>How It Works</h2>
+  <p class="section-subtitle">Three simple steps to smarter studying.</p>
+
+  <div id="card-container"></div>
+
+  <script src="cards.js"></script>
+
+</body>
+</html>
